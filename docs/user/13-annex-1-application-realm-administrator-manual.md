@@ -32,12 +32,14 @@ Administrators see unique tiles on their dashboards to manage global and realm-l
 ## Managing Master Data
 QAT uses a three-tier hierarchy for data management.
 
-### 1. Application Masters (Global)
-These settings apply application-wide across all realms.
+## C1. Application Masters
 
-#### Translation Management
-- **Database Translation**: Used for "Dynamic Labels" (drop-down list items). English is required; others are recommended.
-- **Label Translation**: Used for "Static Labels" (table headers, menu items). Changes reflect immediately.
+### a. Database Translation
+The database translation screen, which is accessible for application admins is used to translate "Dynamic labels" that are stored in QAT. The dynamic labels are included in drop-down lists throughout QAT as well as be labels that reference other labels (e.g. QAT Problem List problems that reference shipment IDs).
+
+For every dynamic label, there must be at least an English translation as identified by the red asterisk next to 'English' in the below figure. The translations for the other software languages are highly recommended but not required to save a translation.
+
+To edit a translation, double-click that cell and input the desired text. Then click the "Submit" button. The submitted translation(s) will not be changed on the front end in QAT until the next software release.
 
 #### Global Entities (CRUD)
 The following entities follow a standard **List > Add (+) > Update** workflow:
