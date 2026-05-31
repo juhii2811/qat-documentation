@@ -5,29 +5,27 @@ sidebar_label: "Getting Started"
 sidebar_position: 5
 ---
 
-# Getting Started
+# Section 2. Getting Started
 
 ## System Requirements
 
-The QAT is a web-based application accessible via laptops and desktops running **Windows, Linux/Ubuntu, or macOS**. 
+The QAT is primarily expected to be accessed via laptops and desktops with standard operating systems such as MS Windows, Linux/Ubuntu, and iOS. The recommended web browser is Google Chrome, but Chromium, Edge, Mozilla Firefox or Safari may be utilized.
 
-- **Recommended Browser:** Google Chrome.
-- **Supported Browsers:** Chromium, Microsoft Edge, Mozilla Firefox, and Safari.
+It is also suggested that each user of QAT have enough space on their C:drive to allow for storing browser cache data successfully. The amount of space needed depends on the size of the QAT program that is being downloaded and how many apps are currently running and utilizing browser data. Temporary storage is shared among all web apps running in the browser. This shared pool can be up to 1/3 of the of available disk space. Each app can then have up to 20% of the shared pool. For example, if the total available C:drive space is 60 GB, the shared pool is 20 GB; thus, QAT can potentially utilize up to 4 GB. This is calculated from 20% (up to 4 GB) of 1/3 (up to 20 GB) of the available C:drive space (60 GB).
 
-### Disk Space and Cache
-We recommend having sufficient free space on your primary drive (e.g., C: drive) for browser cache data. Chrome and other browsers share a storage pool among all web apps, which can be up to 1/3 of available disk space. QAT can utilize up to 20% of this shared pool. For example, with 60 GB of free space, the shared pool is 20 GB, allowing QAT to store up to 4 GB of local data.
+## Levels of Hierarchy in QAT
 
-## Data Hierarchy in QAT
+The QAT system has three levels of hierarchy for conducting operations. The hierarchy levels are as follows:
 
-The QAT system is organized into three hierarchical levels:
+Application Masters → Realm-level Masters → Program-level Masters
 
-1. **Application Level:** The highest level, covering global master data that applies to all Realms and Programs. Restricted to Application Admins.
-2. **Realm Level:** Covers master data specific to a Realm (e.g., Country, Technical Areas, Planning Units). Managed by Realm Admins.
-3. **Program Level:** The third level, where users manage specific forecasting or supply planning data (e.g., consumption, inventory, shipments).
+- **Application** Masters is the top-most data hierarchy level in QAT. Application master data applies to all the Realms and Programs within QAT. Most of it is only accessible to Application Admins, though a few of the Application functions are available to Realm Admins such as adding and updating users and assigning roles to users. Application Admins can select the specific application-wide master data they want to add or update.
+- **Realm** Level Masters covers all the master data for that Realm which apply to its forecasting and supply planning programs. The Realm Admin will be able to view, create and edit this master data. Programs, Technical Areas, Planning Units, Procurement Agents, and Tree Templates are a few examples of realm master data that the Realm Admin can add and maintain. A lot of the realm level masters are accessible for viewing to Program Admins; however, they do not have the ability to add/update this data.
+- **Program** Level Masters is the third level of hierarchy in QAT. While program admins cannot add programs, they can update the program information (e.g., lead times, freight costs, etc.) within their assigned program(s). Program Admin and Program Users can also add and update the program’s data, such as consumption adjustments, extrapolation, and managing trees (in forecasting); and consumption, inventory, shipments (in supply planning).
 
-For detailed administrative functions, see [Annex 1: Application & Realm Administrator Manual](13-annex-1-application-realm-administrator-manual.md#annex-1-application-realm-administrator-manual).
+For more on functionality for Application- and Realm-level administrators, please see [Annex 1: Application & Realm Administrator Manual](13-annex-1-application-realm-administrator-manual.md#annex-1-application-realm-administrator-manual).
 
-> **Note:** A **Program** is a combination of a Country, Technical Area, Organization, and Region (e.g., *FASPonia–ARV-MOH-National*).
+**Programs** are a combination of Country, Technical Area (1 or more), Organization and Region. For example, **FASPonia**–ARV-MOH-National, is a supply planning program under the Global Health Realm for the management and planning of **antiretrovirals** for the ministry of health of the fictional country FASPonia, and the consumption and inventory data is captured at a national level (region).
 
 ## User Roles and Permissions
 
